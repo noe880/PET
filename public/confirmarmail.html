@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/email.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>Formulario de Contacto</title>
+</head>
+
+<body>
+  <div class="container">
+    <form>
+      <h2>Confirma tu cuenta de correo</h2>
+      <p>Por favor, proporciona tu correo electrónico. Te enviaremos un enlace para que puedas crear una nueva
+        contraseña a través de tu correo electrónico.</p>
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+      <button id="button" type="button" class="button" onclick="enviarFormulario('/enviar-correo')">Enviar</button>
+    </form>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

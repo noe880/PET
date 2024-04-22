@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/singUP.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>Formulario de Inserción de Usuarios</title>
+</head>
+
+<body>
+  <div class="container">
+    <img class="img" src="./img/singUpImg.png"></img>
+    <div class="record-data">
+      <h2>Bienvenido</h2>
+      <p>Crea tu cuenta</p>
+      <form id="registro">
+        <input type="user" id="usuario" name="usuario" maxlength="20" placeholder="Usuario" required><br><br>
+        <input type="email" id="correo" name="correo" maxlength="50" placeholder="Correo" required><br><br>
+        <input type="text" id="nombre" name="nombre" maxlength="50" placeholder="Nombre" required><br><br>
+        <input type="text" id="apellido" name="apellido" maxlength="30" placeholder="Apellido"><br><br>
+        <input type="password" id="password" name="password" minlength="6" placeholder="Contraseña" required><br><br>
+        <button id="button" type="button" class="button" onclick="enviarFormulario('/new-user')">Enviar</button>
+      </form>
+    </div>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

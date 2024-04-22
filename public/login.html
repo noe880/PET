@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio de sesión</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <img class="img" src="./img/BotellasLogin.png"></img>
+    <div class="record-data">
+      <h2>Inicio de sesión</h2>
+      <p>Bienvenido</p>
+      <form>
+        <input type="user" id="user" name="user" placeholder="Ingrese su usuario">
+        <input type="password" id="pass" name="pass" placeholder="Ingrese su contraseña">
+        <div class="link">
+          <input type="checkbox" id="rememberMe" name="rememberMe"></input>
+          <label for="rememberMe">Mantenerme conectado</label>
+          <a href="./registro.html" class="registrarse">Registrarse</a>
+        </div>
+        <button id="button" type="button" class="button" onclick="enviarFormulario('/login')">Iniciar sesión</button>
+      </form>
+      <a href="./confirmarmail.html" class="forgot-password">¿Olvidó su contraseña?</a>
+    </div>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
